@@ -10,3 +10,7 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@store1=Store.find_by(id: 1)
+@store1.employees.create( last_name: "Virani", hourly_rate: 60)
+puts Employee.count
